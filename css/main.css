@@ -7,4 +7,13 @@ body {
     position: absolute;
     border-radius: 300px;
     background: rgba(255, 229, 35, 0.566);
+    opacity: 0;
+    animation: float 5s;
+}
+
+@keyframes float {
+   to {
+    top: -300px;
+    opacity: 1;
+   } 
 }

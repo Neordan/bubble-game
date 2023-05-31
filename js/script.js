@@ -11,3 +11,6 @@ document.body.appendChild(bubble);
 const size = Math.random() * 200 + 100 + "px";
 
  //Ajout de la hauteur et la longueur dans sa classe
+
+ bubble.style.height = size;
+ bubble.style.width = size;

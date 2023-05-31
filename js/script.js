@@ -30,5 +30,8 @@ const bubbleMaker = () => {
     //Utilisation de setProperty pour changer la valeur de left en mode random
 
     bubble.style.setProperty('--left', Math.random() * 100 + "%")
+};
 
-}
+//toute les 0.3 secondes, création d'une bubble suite à la l'appel de la fonction bubbleMaker
+
+setInterval(bubbleMaker, 300);

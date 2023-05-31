@@ -22,3 +22,7 @@ const size = Math.random() * 200 + 100 + "px";
  //Création de l'emplacement random par rapport au coté gauche de la page pour les bubble pour un effet de flottement
  
  bubble.style.left = Math.random() * 100 + "%";
+
+ //Utilisation de setProperty pour changer la valeur de left en mode random
+
+ bubble.style.setProperty('--left', Math.random() * 100 + "%")

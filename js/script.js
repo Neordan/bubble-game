@@ -1,3 +1,6 @@
+// Récupération du h3 
+const compteur = document.querySelector('h3');
+
 // Création de la fonction bubbleMaker
 
 const bubbleMaker = () => {

@@ -26,10 +26,13 @@ const bubbleMaker = () => {
     //Création de l'emplacement random par rapport au coté gauche de la page pour les bubble pour un effet de flottement
 
     bubble.style.left = Math.random() * 100 + "%";
+    
+    //Création d'une valeur random négatif ou positif pour que les bubbles se croisent  
+    const plusMinus = Math.random() > 0.5 ?1 : -1;
 
-    //Utilisation de setProperty pour changer la valeur de left en mode random
+    //Utilisation de setProperty pour changer la valeur de left en mode random en utilisant aussi plusMinus
 
-    bubble.style.setProperty('--left', Math.random() * 100 + "%")
+    bubble.style.setProperty('--left', Math.random() * 100 * plusMinus + "%")
 };
 
 //toute les 0.3 secondes, création d'une bubble suite à la l'appel de la fonction bubbleMaker
